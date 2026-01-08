@@ -5,18 +5,22 @@ public class TargetedAd {
 
   public static void main(String[] args)
   {
+    String userTargetList = "";  // first word of each message is the username, later we shouuld have one for cats, and another for dogs instead of only one.
+
+    DataCollector d = new DataCollector();      // new datacollector
+    d.setData( "socialMediaPostsSmall.txt", "targetWords.txt"); //sets the small file for testing, and uses the target words file.
+
+    System.out.println(d.getNextPost()); // d.getNextPost is how you get the lines of the text file, this is a test.
+
+    
+
     /*  
-     * TODO:
-     * PREPARATION WORK
-     * (1) Create a file called targetWords.txt. Populate this file with words on each line that
-     *     you think would determine if a user is a dog or cat owner.
+     
+     
      * 
      * PROGRAMMING
-     * (2) Create a new DataCollector object and set the data to "socialMediaPostsSmall.txt" and "targetWords.txt"
-     *     Important: Use the socialMedialPostsSmall to create your algorithm. Using a small file will help you 
-     *     generate your solution quicker and give you the ability to double check your work.
-     * (3) Create a String variable to hold the names of all the user. (The first word of every post is 
-     *     a person's username)
+     * 
+     
      * (4) Compare each user's post to each target word. If a user mentions a target word, add their username to 
      *     the String of users. Separate usernames with a space. 
      *         Hint: You can use loops to look through each word. 
