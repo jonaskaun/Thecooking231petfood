@@ -1,12 +1,7 @@
-cat
 doggie
-kitty
 dog
 doggo
-kitten
 Dogs
-kitten
-cats
 dogs
 puppy
 fur
