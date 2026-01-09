@@ -4,3 +4,4 @@ kitty
 dog
 doggo
 kitten
+Dogs

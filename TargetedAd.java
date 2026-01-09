@@ -6,11 +6,28 @@ public class TargetedAd {
   public static void main(String[] args)
   {
     String userTargetList = "";  // first word of each message is the username, later we shouuld have one for cats, and another for dogs instead of only one.
+    String currentPost = "";
+    String currentTargetWord = "";
 
     DataCollector d = new DataCollector();      // new datacollector
     d.setData( "socialMediaPostsSmall.txt", "targetWords.txt"); //sets the small file for testing, and uses the target words file.
 
-    System.out.println(d.getNextPost()); // d.getNextPost is how you get the lines of the text file, this is a test.
+    for
+
+    //for (int i = 0; i < 10; i++) {
+      //currentPost = d.getNextPost(); // d.getNextPost is how you get the lines of the text file
+      
+      // while loop that compares the target words, until an if statement find that the wor is "NONE"
+      // if target word found, then index to the first space, substring out the usernanme, and add it onto the list
+
+
+
+
+          
+      //}
+
+        
+    //}
 
     
 
