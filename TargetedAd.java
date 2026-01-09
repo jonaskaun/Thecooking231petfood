@@ -29,6 +29,8 @@ public class TargetedAd {
         
     //}
 
+    System.out.println(d.getNextPost()); // d.getNextPost is how you get the lines of the text file, this is a test.
+    
     
 
     /*  
