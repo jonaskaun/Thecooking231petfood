@@ -10,9 +10,10 @@ public class TargetedAd {
     String currentTargetWord = "";
 
     DataCollector d = new DataCollector();      // new datacollector
+    DataCollector c = new DataCollector();
     d.setData( "socialMediaPostsSmall.txt", "targetWords.txt"); //sets the small file for testing, and uses the target words file.
-
-    for
+    c.setData("socialMediaPostsSmall.txt", "targetWords.txt");
+    // for
 
     //for (int i = 0; i < 10; i++) {
       //currentPost = d.getNextPost(); // d.getNextPost is how you get the lines of the text file
