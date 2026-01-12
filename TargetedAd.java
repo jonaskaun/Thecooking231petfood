@@ -15,12 +15,12 @@ public class TargetedAd {
     c.setData("socialMediaPostsSmall.txt", "targetWordsCat.txt");
     // for
 
-    System.out.println(d.getNextTargetWord());
-    System.out.println(c.getNextTargetWord());
+    
 
     while((d.getNextPost().equals("NONE")) != true){
       
       System.out.println(d.getNextPost());
+      while(d.getNextTargetWord().equals("NONE") != true){}
     }
 
     //for (int i = 0; i < 10; i++) {
@@ -38,7 +38,7 @@ public class TargetedAd {
         
     //}
 
-    System.out.println(d.getNextPost()); // d.getNextPost is how you get the lines of the text file, this is a test.
+   // d.getNextPost is how you get the lines of the text file, this is a test.
     
     
 
