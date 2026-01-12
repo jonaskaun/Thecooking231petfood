@@ -11,8 +11,17 @@ public class TargetedAd {
 
     DataCollector d = new DataCollector();      // new datacollector
     DataCollector c = new DataCollector();
-    d.setData( "socialMediaPostsSmall.txt", "targetWords.txt"); //sets the small file for testing, and uses the target words file.
+    d.setData( "socialMediaPostsSmall.txt", "targetWordsDog.txt"); //sets the small file for testing, and uses the target words file.
+    c.setData("socialMediaPostsSmall.txt", "targetWordsCat.txt");
+    // for
 
+    System.out.println(d.getNextTargetWord());
+    System.out.println(c.getNextTargetWord());
+
+    while((d.getNextPost().equals("NONE")) != true){
+      
+      System.out.println(d.getNextPost());
+    }
 
     //for (int i = 0; i < 10; i++) {
       //currentPost = d.getNextPost(); // d.getNextPost is how you get the lines of the text file
